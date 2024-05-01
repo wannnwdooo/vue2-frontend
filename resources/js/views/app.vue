@@ -1,18 +1,14 @@
 <template>
-    <div>
-        {{message}}
-    </div>
+    <CommentsModule />
 </template>
 <script>
+import { CommentsModule } from "../modules";
+
 const default_layout = "default";
 
-
 export default {
-    computed: {},
-    data() {
-        return {
-            message:'Hello World'
-        }
-    }
+    components: { CommentsModule },
 };
 </script>
+
+<style></style>
