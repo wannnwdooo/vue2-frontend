@@ -1,13 +1,13 @@
 <template>
     <div>
         <h1 v-if="!comments.length">It's empty here for now</h1>
-        <template v-else>
+        <div class="comments__list" v-else>
             <CommentsListItem
                 v-for="comment of comments"
                 :key="comment.id"
                 :comment="comment"
             />
-        </template>
+        </div>
     </div>
 </template>
 <script>
@@ -25,4 +25,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.comments__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+</style>

@@ -41,7 +41,6 @@ export default {
 .comment {
     width: 100%;
     padding: 1.5rem;
-    margin: 1rem 0;
     border-radius: 0.5rem;
     background: var(--white-color);
 }

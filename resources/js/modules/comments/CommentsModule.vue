@@ -67,6 +67,10 @@ section {
     max-height: 100%;
     margin: 0 auto;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
 }
 .comments__pagination {
     @media (width <= 480px) {

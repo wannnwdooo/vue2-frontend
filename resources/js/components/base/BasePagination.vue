@@ -18,14 +18,14 @@
         <BaseButton
             outline
             @click="nextPage"
-            :disabled="currentPage === totalPages"
+            :disabled="currentPage === totalPages || totalPages === 0"
         >
             Next
         </BaseButton>
         <BaseButton
             outline
             @click="lastPage"
-            :disabled="currentPage === totalPages"
+            :disabled="currentPage === totalPages || totalPages === 0"
         >
             Last
         </BaseButton>
